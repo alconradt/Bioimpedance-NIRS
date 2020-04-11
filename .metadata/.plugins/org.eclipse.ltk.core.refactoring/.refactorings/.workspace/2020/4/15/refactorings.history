@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;BIA&apos;" deleteContents="true" description="Delete resource &apos;BIA&apos;" element1="/BIA" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1586583843945"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;BIA&apos;" deleteContents="true" description="Delete resource &apos;BIA&apos;" element1="/BIA" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1586583843945"/>&#x0A;<refactoring comment="Delete resource &apos;BIoimpedance&apos;" deleteContents="true" description="Delete resource &apos;BIoimpedance&apos;" element1="/BIoimpedance" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1586586900790"/>&#x0A;<refactoring comment="Delete resource &apos;Bioimpedance-NIRS&apos;" deleteContents="true" description="Delete resource &apos;Bioimpedance-NIRS&apos;" element1="/Bioimpedance-NIRS" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1586586921416"/>
 </session>
