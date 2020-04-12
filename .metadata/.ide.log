@@ -2377,3 +2377,669 @@
 2020-04-11 03:47:35,397 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1494mS.
 2020-04-11 03:47:35,397 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
 2020-04-11 03:47:35,398 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:02:08,701 [INFO] Activator:176 - 
+
+
+2020-04-12 04:02:08,705 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-12 04:13:34,557 [INFO] Activator:176 - 
+
+
+2020-04-12 04:13:34,559 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-12 04:13:42,798 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-12 04:13:42,813 [INFO] DbMcusXml:72 - Set database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-12 04:13:42,817 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-12 04:13:42,818 [INFO] DbMcus:235 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:42,818 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:42,831 [INFO] DbMcusAds:85 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:42,833 [INFO] DbMcusDocs:108 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:42,837 [INFO] DbMcusJson:61 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:42,838 [INFO] DbBoardsDocs:97 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:42,840 [INFO] DbBoardsJson:51 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,066 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-12 04:13:43,174 [INFO] RulesReader:52 - Compatibility file has been processed (208 Rules)
+2020-04-12 04:13:43,226 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_242
+2020-04-12 04:13:43,227 [INFO] DbMcusXml:72 - Set database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-12 04:13:43,227 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-12 04:13:43,227 [INFO] DbMcus:235 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:43,228 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:43,228 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,229 [INFO] DbMcusAds:85 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,229 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,229 [INFO] DbMcusDocs:108 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,229 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,229 [INFO] DbMcusJson:61 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,229 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,230 [INFO] DbBoardsDocs:97 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,230 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,230 [INFO] DbBoardsJson:51 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,230 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,230 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,230 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-12 04:13:43,283 [INFO] MainPanel:181 - HeapMemory: 295698432
+2020-04-12 04:13:43,361 [INFO] DbMcusXml:72 - Set database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-12 04:13:43,361 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-12 04:13:43,361 [INFO] DbMcus:235 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:43,362 [INFO] DbBoards:232 - Set plugin images path to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-12 04:13:43,362 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,362 [INFO] DbMcusAds:85 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,363 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,363 [INFO] DbMcusDocs:108 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,363 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,363 [INFO] DbMcusJson:61 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,363 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,363 [INFO] DbBoardsDocs:97 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,364 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,364 [INFO] DbBoardsJson:51 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-12 04:13:43,364 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,364 [WARN] DbFile:36 - Overriding database path with different value: /home/andre/.stmcufinder/plugins/mcufinder/ => /home/andre/.stmcufinder/plugins/mcufinder
+2020-04-12 04:13:43,364 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/andre/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-12 04:13:43,377 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-12 04:13:43,379 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, tutovideos]
+2020-04-12 04:13:43,380 [INFO] PluginManage:292 - Check plugin analytics
+2020-04-12 04:13:43,386 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-04-12 04:13:43,386 [INFO] PluginManage:292 - Check plugin clock
+2020-04-12 04:13:43,397 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-04-12 04:13:43,397 [INFO] PluginManage:292 - Check plugin ddr
+2020-04-12 04:13:43,400 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-04-12 04:13:43,400 [INFO] PluginManage:292 - Check plugin filemanager
+2020-04-12 04:13:43,511 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-04-12 04:13:43,511 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-04-12 04:13:43,520 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-04-12 04:13:43,520 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-04-12 04:13:43,528 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-04-12 04:13:43,529 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-04-12 04:13:43,552 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-04-12 04:13:43,552 [INFO] PluginManage:292 - Check plugin power
+2020-04-12 04:13:43,566 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-04-12 04:13:43,566 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-04-12 04:13:43,580 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-04-12 04:13:43,580 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-04-12 04:13:43,605 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/andre/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 4 ms. number of Sw pack : 1
+2020-04-12 04:13:43,611 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-04-12 04:13:43,612 [INFO] PluginManage:292 - Check plugin tools
+2020-04-12 04:13:43,614 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-04-12 04:13:43,614 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-04-12 04:13:43,615 [INFO] PluginManage:347 - Ignore plugin tutovideos (category:base)
+2020-04-12 04:13:43,616 [INFO] PluginManage:292 - Check plugin updater
+2020-04-12 04:13:43,627 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-04-12 04:13:43,627 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-04-12 04:13:43,753 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-12 04:13:43,815 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,815 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-04-12 04:13:43,817 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,817 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-04-12 04:13:43,822 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,823 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-04-12 04:13:43,826 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,826 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-04-12 04:13:43,830 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,831 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-04-12 04:13:43,834 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,834 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-04-12 04:13:43,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,837 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-04-12 04:13:43,841 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,841 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-04-12 04:13:43,845 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,846 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-04-12 04:13:43,848 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,848 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-04-12 04:13:43,850 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,850 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-04-12 04:13:43,852 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,853 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-04-12 04:13:43,859 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,859 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-04-12 04:13:43,861 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,862 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-04-12 04:13:43,866 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,867 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-04-12 04:13:43,869 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,869 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-04-12 04:13:43,875 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,876 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-04-12 04:13:43,878 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,878 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-04-12 04:13:43,887 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,891 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-04-12 04:13:43,893 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,894 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-04-12 04:13:43,895 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,895 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-04-12 04:13:43,898 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,898 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-04-12 04:13:43,903 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,903 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-04-12 04:13:43,906 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,907 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-04-12 04:13:43,909 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,909 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-04-12 04:13:43,913 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,913 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-04-12 04:13:43,916 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,916 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-04-12 04:13:43,918 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,918 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-04-12 04:13:43,923 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,923 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-04-12 04:13:43,926 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,926 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-04-12 04:13:43,928 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,928 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-04-12 04:13:43,929 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,929 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-04-12 04:13:43,931 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,932 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-04-12 04:13:43,934 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,934 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-04-12 04:13:43,935 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,936 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-04-12 04:13:43,937 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,938 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-04-12 04:13:43,939 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:43,939 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-04-12 04:13:44,106 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-12 04:13:44,106 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-04-12 04:13:44,259 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-12 04:13:44,407 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-12 04:13:44,411 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-12 04:13:44,412 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-12 04:13:44,416 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-12 04:13:44,416 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin
+2020-04-12 04:13:44,420 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin/STM32_Programmer_CLI -l
+2020-04-12 04:13:44,520 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin
+2020-04-12 04:13:44,546 [INFO] Updater:886 - Updater Version found : 5.6.0
+2020-04-12 04:13:44,588 [INFO] ApplicationProperties:181 - Using Application install path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-12 04:13:45,105 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-12 04:13:45,105 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-04-12 04:13:45,106 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-12 04:13:45,129 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-04-12 04:13:45,311 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-12 04:13:45,478 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-12 04:13:45,478 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-12 04:13:45,480 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-12 04:13:45,481 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 241682888 Bytes (295698432)
+2020-04-12 04:13:45,482 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-12 04:13:45,482 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-12 04:13:45,482 [INFO] OpenFileManager:274 - Change cursor
+2020-04-12 04:13:46,616 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/andre/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-04-12 04:13:46,620 [INFO] IntegrityCheckThread:98 - End integrity checks thread
+2020-04-12 04:13:48,602 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,603 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,604 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,605 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (TIM6_UP) currently not set
+2020-04-12 04:13:48,607 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-04-12 04:13:48,857 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 261529944 Bytes (819986432)
+2020-04-12 04:13:48,859 [INFO] DbMcusXml:110 - Load MCU database from /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/families.xml
+2020-04-12 04:13:49,352 [INFO] DbMcusJson:90 - JSON generation date=Mon Apr 06 12:04:59 BRT 2020 (1586185499)
+2020-04-12 04:13:49,855 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-04-12 04:13:49,856 [INFO] ApiDb:147 - User favorites file not found: /home/andre/.stm32cubemx/favorites.mcus.txt
+2020-04-12 04:13:49,856 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-04-12 04:13:49,860 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/andre/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 1 ms. number of Sw pack : 1
+2020-04-12 04:13:49,877 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-04-12 04:13:50,358 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-12 04:13:50,359 [INFO] PinOutPanel:1420 - setPackage(STM32F303ZETx,LQFP144)
+2020-04-12 04:13:50,802 [INFO] UtilMem:74 - Before build in PCC Used Memory: 334068720 Bytes (846200832)
+2020-04-12 04:13:51,215 [INFO] SharedServices:71 - Folder for power plug-in: /home/andre/.stm32cubemx/plugins/power
+2020-04-12 04:13:51,257 [INFO] SharedServices:71 - Folder for power plug-in: /home/andre/.stm32cubemx/plugins/power
+2020-04-12 04:13:51,299 [INFO] SharedServices:71 - Folder for power plug-in: /home/andre/.stm32cubemx/plugins/power
+2020-04-12 04:13:51,305 [INFO] SharedServices:71 - Folder for power plug-in: /home/andre/.stm32cubemx/plugins/power
+2020-04-12 04:13:51,503 [INFO] UtilMem:74 - After build in PCC Used Memory: 412195848 Bytes (846200832)
+2020-04-12 04:13:51,528 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,528 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,528 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,529 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,529 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,529 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,529 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,529 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,530 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,530 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,530 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,530 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,531 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,532 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,532 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,532 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,532 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,533 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,533 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,533 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,533 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,534 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,534 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,534 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,535 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,535 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,535 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,535 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,536 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,536 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,536 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,536 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,536 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,538 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,539 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,540 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,540 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,540 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-12 04:13:51,573 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-04-12 04:13:51,641 [INFO] OpenFileManager:294 - Restore cursor
+2020-04-12 04:14:43,383 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 574370272 Bytes (846200832)
+2020-04-12 04:14:43,617 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 585380312 Bytes (846200832)
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7F3
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-04-12 04:14:44,019 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-12 04:14:44,020 [INFO] CodeGenerator:603 - code generatio: config db path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-12 04:14:44,329 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp_save
+2020-04-12 04:14:44,689 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp
+2020-04-12 04:14:44,790 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp_save
+2020-04-12 04:14:44,881 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp
+2020-04-12 04:14:45,082 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:14:45,083 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-04-12 04:14:45,084 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:14:45,101 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp_save
+2020-04-12 04:14:45,166 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp
+2020-04-12 04:14:45,170 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp_save
+2020-04-12 04:14:45,233 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp
+2020-04-12 04:14:45,234 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:14:45,235 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-12 04:14:45,235 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:14:45,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:14:45,236 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-04-12 04:14:45,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:14:45,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-12 04:14:45,238 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:14:45,243 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c_save
+2020-04-12 04:14:45,355 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c
+2020-04-12 04:14:45,358 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h_save
+2020-04-12 04:14:45,435 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h
+2020-04-12 04:14:45,440 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c_save
+2020-04-12 04:14:45,571 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c
+2020-04-12 04:14:45,574 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp_save
+2020-04-12 04:14:45,635 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp
+2020-04-12 04:14:45,639 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h_save
+2020-04-12 04:14:45,711 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h
+2020-04-12 04:14:45,732 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-04-12 04:14:45,732 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-12 04:14:45,732 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-04-12 04:14:45,733 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-12 04:14:45,736 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h_save
+2020-04-12 04:14:45,820 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h
+2020-04-12 04:14:45,825 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c_save
+2020-04-12 04:14:45,959 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c
+2020-04-12 04:14:46,656 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 71mS.
+2020-04-12 04:14:46,658 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-12 04:14:47,005 [INFO] ConfigFileManager:1066 - The Die is : DIE446
+2020-04-12 04:14:48,702 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 2044mS.
+2020-04-12 04:14:48,703 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:14:48,703 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:15:44,288 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-12 04:15:44,290 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Successfull proxy connection.
+2020-04-12 04:15:44,389 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-04-12 04:15:44,401 [INFO] FinderPluginLoader:86 - Searching for filters in installed packs
+2020-04-12 04:15:45,067 [INFO] DbMcusAds:143 - JSON generation date=Thu Mar 12 12:08:29 BRT 2020 (1584025709)
+2020-04-12 04:15:45,069 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-12 04:15:45,108 [INFO] McuDetailPanel:181 - Set advertising image to /home/andre/STM32Cube/Repository//STM32L4_MCUs_N4239S_big.jpg
+2020-04-12 04:15:45,406 [INFO] McuFilterPanel:249 - Update 0 favorites MCUs
+2020-04-12 04:15:45,531 [INFO] DbBoardsPdsc:92 - Found 28 items
+2020-04-12 04:15:45,534 [INFO] DbBoardsPdsc:92 - Found 4 items
+2020-04-12 04:15:45,541 [INFO] DbBoardsPdsc:92 - Found 22 items
+2020-04-12 04:15:45,544 [INFO] DbBoardsPdsc:92 - Found 9 items
+2020-04-12 04:15:45,545 [INFO] DbBoardsPdsc:92 - Found 1 items
+2020-04-12 04:15:45,558 [INFO] DbBoardsPdsc:92 - Found 40 items
+2020-04-12 04:15:45,574 [INFO] DbBoardsPdsc:92 - Found 39 items
+2020-04-12 04:15:45,575 [INFO] DbBoardsPdsc:92 - Found 2 items
+2020-04-12 04:15:45,580 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-04-12 04:15:45,580 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-DK: unknown feature type=WIFI, name=, username=WIFI 802.11 b/g/n, n=1
+2020-04-12 04:15:45,618 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-04-12 04:15:45,618 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-04-12 04:15:45,618 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=WIFI, name=, username=WIFI 802.11 a/b/g/n, n=1
+2020-04-12 04:15:45,618 [WARN] DbBoardsPdsc:256 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-04-12 04:15:45,636 [INFO] DbBoardsJson:80 - JSON generation date=Tue Feb 11 10:53:55 BRT 2020 (1581429235)
+2020-04-12 04:15:45,642 [INFO] DbBoards:120 - Found 145 boards (142 are supported by CubeMX)
+2020-04-12 04:15:45,648 [INFO] DbBoardsDocs:131 - JSON generation date=Mon Apr 06 12:04:59 BRT 2020 (1586185499)
+2020-04-12 04:15:45,658 [INFO] DbBoardsDocs:70 - Found 157 boards documents
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board NUCLEO-WB35CE has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board STEVAL-STWINKT1 has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board STEVAL-IDP005V1 has no document id list !
+2020-04-12 04:15:45,659 [WARN] DbBoards:130 - board STEVAL-IDP005V2 has no document id list !
+2020-04-12 04:15:45,660 [WARN] DbBoards:130 - board NUCLEO-H743ZI2 has no document id list !
+2020-04-12 04:15:45,660 [WARN] DbBoards:130 - board NUCLEO-L4P5ZG has no document id list !
+2020-04-12 04:15:45,660 [WARN] DbBoards:130 - board STM32F401C-DISCO has no document id list !
+2020-04-12 04:15:45,661 [WARN] DbBoards:130 - board STM32F769I-DISC1 has no document id list !
+2020-04-12 04:15:45,661 [WARN] DbBoards:152 - board STM32F723E-DISCO / document id not found: 4598
+2020-04-12 04:15:45,661 [WARN] DbBoards:130 - board STM32L-DISCOVERY has no document id list !
+2020-04-12 04:15:45,661 [WARN] DbBoards:152 - board STM32L496G-DISCO / document id not found: 4598
+2020-04-12 04:15:45,661 [WARN] DbBoards:152 - board STM32H747I-DISCO / document id not found: 4598
+2020-04-12 04:15:45,661 [WARN] DbBoards:130 - board STM32H747I-DISC1 has no document id list !
+2020-04-12 04:15:45,661 [WARN] DbBoards:152 - board STM32H745I-DISCO / document id not found: 4598
+2020-04-12 04:15:45,662 [WARN] DbBoards:152 - board STM32H750B-DK / document id not found: 4598
+2020-04-12 04:15:45,662 [WARN] DbBoards:152 - board STM32H7B3I-DK / document id not found: 4598
+2020-04-12 04:15:45,662 [WARN] DbBoards:152 - board STM32L4R9I-DISCO / document id not found: 4598
+2020-04-12 04:15:45,662 [WARN] DbBoards:130 - board STM32MP157A-DK1 has no document id list !
+2020-04-12 04:15:45,662 [WARN] DbBoards:152 - board STM32L562E-DK / document id not found: 4598
+2020-04-12 04:15:45,662 [WARN] DbBoards:130 - board STM32L4P5G-DK has no document id list !
+2020-04-12 04:15:45,662 [WARN] DbBoards:130 - board STM32091C-EVAL has no document id list !
+2020-04-12 04:15:45,662 [WARN] DbBoards:130 - board STM3210C-EVAL has no document id list !
+2020-04-12 04:15:45,662 [WARN] DbBoards:130 - board STM32100E-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM3221G-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32303C-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32L152D-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32746G-EVAL2 has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32F779I-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32479I-EVAL has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32H743I-EVAL2 has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:152 - board STM32H7B3I-EVAL / document id not found: 4596
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32H753I-EVAL2 has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STM32G474E-EVAL1 has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STEVAL-BFA001V1B has no document id list !
+2020-04-12 04:15:45,663 [WARN] DbBoards:130 - board STEVAL-BFA001V2B has no document id list !
+2020-04-12 04:15:46,887 [ERROR] DbBoards:192 - Image file not found for board STM32H7B3I-DK: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/boards/stm32h7b3i-dk_small.jpg
+2020-04-12 04:15:47,218 [ERROR] DbBoards:192 - Image file not found for board STM32H747I-EVAL: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2020-04-12 04:15:47,218 [ERROR] DbBoards:192 - Image file not found for board STM32H757I-EVAL: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/boards/stm32h747ieval_small.jpg
+2020-04-12 04:15:47,321 [INFO] ApiDb:158 - Load user favorites file /home/andre/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-04-12 04:15:47,321 [INFO] ApiDb:163 - User favorites Boards=[]
+2020-04-12 04:15:47,321 [INFO] DbBoards:209 - Set 0 / 0 favorites Boards
+2020-04-12 04:15:47,376 [INFO] LoadUrlFilesThread:161 - End of LoadServerUrlFiles without Thread
+2020-04-12 04:15:47,377 [INFO] BoardDetailPanel:180 - Set advertising image to /home/andre/STM32Cube/Repository//STM32L4_MCUs_N4239S_big.jpg
+2020-04-12 04:15:47,396 [INFO] BoardFilterPanel:211 - Update 0 favorites Boards
+2020-04-12 04:15:47,453 [INFO] CrossSelectorPresenter:1319 - Cross Selector saved comparison directory: /home/andre/.stmcufinder/plugins/mcufinder/mcu/cs_comparisons_mx
+2020-04-12 04:16:23,194 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 558008904 Bytes (892338176)
+2020-04-12 04:16:23,365 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 567371480 Bytes (892338176)
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7F3
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-04-12 04:16:23,561 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-04-12 04:16:23,562 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-12 04:16:23,562 [INFO] CodeGenerator:603 - code generatio: config db path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-12 04:16:23,604 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-04-12 04:16:23,604 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:16:23,604 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:16:23,604 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:16:23,604 [INFO] Argument:278 - Argument : Initvalue: null
+2020-04-12 04:16:23,604 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:16:23,605 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:16:23,605 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:16:23,605 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:16:23,605 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:16:23,605 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:16:23,605 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:16:23,605 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:16:23,605 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:16:23,605 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:16:23,605 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : Statevalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : Statevalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:16:23,606 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-04-12 04:16:23,607 [INFO] Argument:278 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:16:23,607 [INFO] Argument:288 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:16:23,862 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp_save
+2020-04-12 04:16:23,922 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp
+2020-04-12 04:16:23,983 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp_save
+2020-04-12 04:16:24,058 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp
+2020-04-12 04:16:24,151 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:16:24,152 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-04-12 04:16:24,152 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:16:24,161 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp_save
+2020-04-12 04:16:24,231 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp
+2020-04-12 04:16:24,232 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp_save
+2020-04-12 04:16:24,273 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp
+2020-04-12 04:16:24,274 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:16:24,274 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-12 04:16:24,275 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:16:24,276 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:16:24,276 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-04-12 04:16:24,276 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:16:24,277 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-12 04:16:24,277 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:16:24,280 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c_save
+2020-04-12 04:16:24,338 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c
+2020-04-12 04:16:24,340 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h_save
+2020-04-12 04:16:24,387 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h
+2020-04-12 04:16:24,392 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c_save
+2020-04-12 04:16:24,480 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c
+2020-04-12 04:16:24,483 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp_save
+2020-04-12 04:16:24,533 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp
+2020-04-12 04:16:24,537 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h_save
+2020-04-12 04:16:24,593 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h
+2020-04-12 04:16:24,607 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-04-12 04:16:24,607 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-12 04:16:24,607 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-04-12 04:16:24,607 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-12 04:16:24,609 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h_save
+2020-04-12 04:16:24,667 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h
+2020-04-12 04:16:24,670 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c_save
+2020-04-12 04:16:24,760 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c
+2020-04-12 04:16:25,372 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 15mS.
+2020-04-12 04:16:25,373 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-12 04:16:25,631 [INFO] ConfigFileManager:1066 - The Die is : DIE446
+2020-04-12 04:16:26,965 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1592mS.
+2020-04-12 04:16:26,966 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:16:26,966 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:19:45,709 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 567828376 Bytes (958398464)
+2020-04-12 04:19:45,943 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 614750128 Bytes (958398464)
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7F3
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-04-12 04:19:46,082 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-12 04:19:46,083 [INFO] CodeGenerator:603 - code generatio: config db path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-04-12 04:19:46,106 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:19:46,106 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : Initvalue: null
+2020-04-12 04:19:46,106 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:19:46,106 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:19:46,106 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:19:46,106 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:19:46,106 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : Statevalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : Statevalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-04-12 04:19:46,107 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-04-12 04:19:46,108 [INFO] Argument:278 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:19:46,108 [INFO] Argument:288 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:19:46,265 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp_save
+2020-04-12 04:19:46,305 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp
+2020-04-12 04:19:46,320 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp_save
+2020-04-12 04:19:46,363 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp
+2020-04-12 04:19:46,426 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:19:46,426 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-04-12 04:19:46,427 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:19:46,486 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp_save
+2020-04-12 04:19:46,534 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp
+2020-04-12 04:19:46,536 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp_save
+2020-04-12 04:19:46,575 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp
+2020-04-12 04:19:46,576 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:19:46,577 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-12 04:19:46,577 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:19:46,578 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:19:46,578 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-04-12 04:19:46,578 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:19:46,579 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-12 04:19:46,579 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:19:46,581 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c_save
+2020-04-12 04:19:46,637 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c
+2020-04-12 04:19:46,639 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h_save
+2020-04-12 04:19:46,686 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h
+2020-04-12 04:19:46,689 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c_save
+2020-04-12 04:19:46,761 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c
+2020-04-12 04:19:46,762 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp_save
+2020-04-12 04:19:46,802 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp
+2020-04-12 04:19:46,803 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h_save
+2020-04-12 04:19:46,850 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h
+2020-04-12 04:19:46,859 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-04-12 04:19:46,859 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-12 04:19:46,859 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-04-12 04:19:46,860 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-12 04:19:46,861 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h_save
+2020-04-12 04:19:46,907 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h
+2020-04-12 04:19:46,909 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c_save
+2020-04-12 04:19:46,977 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c
+2020-04-12 04:19:47,322 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 13mS.
+2020-04-12 04:19:47,323 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-12 04:19:47,748 [INFO] ConfigFileManager:1066 - The Die is : DIE446
+2020-04-12 04:19:48,825 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1502mS.
+2020-04-12 04:19:48,825 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:19:48,826 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:20:01,711 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 613723560 Bytes (958398464)
+2020-04-12 04:20:01,862 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM6_7F3
+2020-04-12 04:20:01,862 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-12 04:20:01,863 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: RCC
+2020-04-12 04:20:01,863 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-12 04:20:01,863 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: USART
+2020-04-12 04:20:01,863 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: DMA
+2020-04-12 04:20:01,863 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-12 04:20:01,863 [INFO] CodeGenerator:603 - code generatio: config db path: /opt/st/stm32cubeide_1.3.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-12 04:20:01,882 [INFO] Argument:278 - Argument : hdmavalue: null
+2020-04-12 04:20:01,882 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Channel3
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Initvalue: null
+2020-04-12 04:20:01,883 [INFO] Argument:280 - 	 sub Args: 
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2020-04-12 04:20:01,883 [INFO] Argument:278 - Argument : Lockvalue: null
+2020-04-12 04:20:01,883 [INFO] Argument:288 - Argument : Lockvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : Statevalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : Statevalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : Parentvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : Parentvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2020-04-12 04:20:01,884 [INFO] Argument:278 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:20:01,884 [INFO] Argument:288 - Argument : DMA_Remapvalue: HAL_REMAPDMA_TIM6_DAC1_CH1_DMA1_CH3
+2020-04-12 04:20:02,025 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp_save
+2020-04-12 04:20:02,066 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/license.tmp
+2020-04-12 04:20:02,080 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp_save
+2020-04-12 04:20:02,182 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/gpio.tmp
+2020-04-12 04:20:02,244 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:20:02,245 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2020-04-12 04:20:02,245 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:20:02,251 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp_save
+2020-04-12 04:20:02,294 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma.tmp
+2020-04-12 04:20:02,295 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp_save
+2020-04-12 04:20:02,334 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/dma_GV.tmp
+2020-04-12 04:20:02,334 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:20:02,335 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-12 04:20:02,335 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:20:02,336 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-12 04:20:02,336 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for USART
+2020-04-12 04:20:02,336 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:20:02,337 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-12 04:20:02,337 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-12 04:20:02,340 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c_save
+2020-04-12 04:20:02,393 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_it.c
+2020-04-12 04:20:02,395 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h_save
+2020-04-12 04:20:02,436 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_it.h
+2020-04-12 04:20:02,439 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c_save
+2020-04-12 04:20:02,506 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/stm32f3xx_hal_msp.c
+2020-04-12 04:20:02,508 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp_save
+2020-04-12 04:20:02,547 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/MXTmpFiles/system.tmp
+2020-04-12 04:20:02,549 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h_save
+2020-04-12 04:20:02,592 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/stm32f3xx_hal_conf.h
+2020-04-12 04:20:02,600 [WARN] IPConfigManager:2701 - IP not found : TIM
+2020-04-12 04:20:02,600 [WARN] IPConfigManager:2701 - IP not found : gpio
+2020-04-12 04:20:02,600 [WARN] CodeGenerator:2649 - IP not found : TIM
+2020-04-12 04:20:02,600 [WARN] CodeGenerator:2649 - IP not found : gpio
+2020-04-12 04:20:02,602 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h_save
+2020-04-12 04:20:02,646 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Inc/main.h
+2020-04-12 04:20:02,648 [INFO] CodeEngine:188 - oldGeneratedFile, /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c_save
+2020-04-12 04:20:02,714 [INFO] CodeEngine:206 - Generated code: /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/Core/Src/main.c
+2020-04-12 04:20:03,032 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 11mS.
+2020-04-12 04:20:03,033 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-12 04:20:03,393 [INFO] ConfigFileManager:1066 - The Die is : DIE446
+2020-04-12 04:20:04,317 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1284mS.
+2020-04-12 04:20:04,318 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-12 04:20:04,318 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
