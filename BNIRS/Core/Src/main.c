@@ -97,7 +97,9 @@ int main(void)
   MX_USART3_UART_Init();
   MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t data[] = {0xFF,0x00};
+  //binary sequence to be written in the BSRR register of the GPIOA port pin PA0
+  uint32_t DIBS_sequence[] =
+  {1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536,1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536}; // 1 -> High & 65536 -> Low
 
   HAL_TIM_Base_Init(&htim6);
   HAL_TIM_Base_Start(&htim6);
@@ -106,13 +108,13 @@ int main(void)
   hdma_tim6_up.Init.Direction = DMA_MEMORY_TO_PERIPH;
   hdma_tim6_up.Init.PeriphInc = DMA_PINC_DISABLE;
   hdma_tim6_up.Init.MemInc = DMA_MINC_ENABLE;
-  hdma_tim6_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-  hdma_tim6_up.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+  hdma_tim6_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+  hdma_tim6_up.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
   hdma_tim6_up.Init.Mode = DMA_CIRCULAR;
   hdma_tim6_up.Init.Priority = DMA_PRIORITY_LOW;
   HAL_DMA_Init(&hdma_tim6_up);
 
-  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)data, (uint32_t)&GPIOB->ODR, 2);
+  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
   __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
   /* USER CODE END 2 */
 
@@ -189,9 +191,9 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 71999;
+  htim6.Init.Prescaler = 17999;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 499;
+  htim6.Init.Period = 1;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
   {
@@ -273,13 +275,9 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
@@ -287,13 +285,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_7;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
