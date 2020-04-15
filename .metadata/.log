@@ -1048,3 +1048,67 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/andre/Cloud/LIEB/B
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-12 06:48:47.406
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2020-04-12 07:25:26.731 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-12 07:25:31.926
+!MESSAGE Log4j initialized with config file /home/andre/Cloud/LIEB/Bioimpedance-NIRS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-12 07:25:34.814
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-12 07:25:35.189
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2020-04-12 22:27:03.999 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-12 22:27:28.149
+!MESSAGE Log4j initialized with config file /home/andre/Cloud/LIEB/Bioimpedance-NIRS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-12 22:27:31.721
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-12 22:27:32.005
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2020-04-14 21:39:07.091 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-14 21:39:14.480
+!MESSAGE Log4j initialized with config file /home/andre/Cloud/LIEB/Bioimpedance-NIRS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-14 21:39:17.852
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-14 21:39:18.323
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2020-04-15 17:09:27.143 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/BNIRS.ioc
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-04-15 17:09:33.336
+!MESSAGE Log4j initialized with config file /home/andre/Cloud/LIEB/Bioimpedance-NIRS/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-04-15 17:09:35.919
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-04-15 17:09:36.388
+!MESSAGE Started RMI Server, listening on port 41337

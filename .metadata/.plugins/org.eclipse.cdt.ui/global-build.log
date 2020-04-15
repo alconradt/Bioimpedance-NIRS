@@ -1,17 +1,7 @@
-07:18:45 **** Incremental Build of configuration Debug for project BNIRS ****
+18:36:16 **** Incremental Build of configuration Debug for project BNIRS ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F303xE -DDEBUG -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "BNIRS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/andre/Cloud/LIEB/Bioimpedance-NIRS/BNIRS/STM32F303ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BNIRS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BNIRS.elf
- 
-arm-none-eabi-objdump -h -S  BNIRS.elf  > "BNIRS.list"
-arm-none-eabi-objcopy  -O binary  BNIRS.elf  "BNIRS.bin"
 arm-none-eabi-size   BNIRS.elf 
    text	   data	    bss	    dec	    hex	filename
-  13128	     20	   1828	  14976	   3a80	BNIRS.elf
+  23640	    120	   2696	  26456	   6758	BNIRS.elf
 Finished building: default.size.stdout
-Finished building: BNIRS.bin
- 
- 
-Finished building: BNIRS.list
  
