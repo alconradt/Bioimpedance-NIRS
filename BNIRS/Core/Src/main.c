@@ -132,6 +132,17 @@ int main(void)
   HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
   __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
+  printf("Data:");
   HAL_TIM_Base_Start(&htim3);
   HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA, 320);
   /* USER CODE END 2 */
@@ -151,7 +162,6 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	HAL_ADC_Stop_DMA(&hadc2);
 	HAL_DMA_Abort(&hdma_tim6_up);
-
 	for(int i = 0;i < 320;i++)
 		{
 			printf("%i,",ADC_BIA[i]);
@@ -280,7 +290,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 1799;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 2;
+  htim3.Init.Period = 1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -324,7 +334,7 @@ static void MX_TIM6_Init(void)
   htim6.Instance = TIM6;
   htim6.Init.Prescaler = 17999;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 2;
+  htim6.Init.Period = 1;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
   {

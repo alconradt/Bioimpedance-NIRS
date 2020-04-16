@@ -1,10 +1,10 @@
-18:36:16 **** Incremental Build of configuration Debug for project BNIRS ****
+05:39:15 **** Incremental Build of configuration Debug for project BNIRS ****
 make -j8 all 
 arm-none-eabi-size   BNIRS.elf 
    text	   data	    bss	    dec	    hex	filename
-  23640	    120	   2696	  26456	   6758	BNIRS.elf
+  23716	    120	   2696	  26532	   67a4	BNIRS.elf
 Finished building: default.size.stdout
  
 
-18:36:16 Build Finished. 0 errors, 0 warnings. (took 67ms)
+05:39:15 Build Finished. 0 errors, 0 warnings. (took 80ms)
 
