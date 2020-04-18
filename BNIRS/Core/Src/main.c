@@ -74,7 +74,7 @@ static void MX_TIM3_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-uint16_t ADC_BIA[320];
+uint16_t ADC_BIA[800];
 /* USER CODE END 0 */
 
 /**
@@ -144,7 +144,18 @@ int main(void)
   printf("Data:");
   printf("Data:");
   HAL_TIM_Base_Start(&htim3);
-  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA, 320);
+
+  hdma_adc2.Instance = DMA2_Channel1;
+  hdma_adc2.Init.Direction = DMA_PERIPH_TO_MEMORY;
+  hdma_adc2.Init.PeriphInc = DMA_PINC_DISABLE;
+  hdma_adc2.Init.MemInc = DMA_MINC_ENABLE;
+  hdma_adc2.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+  hdma_adc2.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+  hdma_adc2.Init.Mode = DMA_NORMAL;
+  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
+  HAL_DMA_Init(&hdma_adc2);
+
+  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA, 800);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -162,7 +173,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	HAL_ADC_Stop_DMA(&hadc2);
 	HAL_DMA_Abort(&hdma_tim6_up);
-	for(int i = 0;i < 320;i++)
+	for(int i = 0;i < 800;i++)
 		{
 			printf("%i,",ADC_BIA[i]);
 		}
