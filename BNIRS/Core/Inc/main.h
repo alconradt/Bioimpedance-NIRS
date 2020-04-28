@@ -52,7 +52,7 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
-
+void Measurement(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
