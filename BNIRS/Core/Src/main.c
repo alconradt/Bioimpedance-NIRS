@@ -78,8 +78,8 @@ static void MX_TIM3_Init(void);
 uint32_t DIBS_sequence[] =
 {1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536,1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536}; // 1 -> High & 65536 -> Low
 
-
-uint16_t ADC_BIA[800];
+int Measures = 0;
+uint16_t ADC_BIA[800], DECADA0[800];
 /* USER CODE END 0 */
 
 /**
@@ -116,6 +116,7 @@ int main(void)
   MX_ADC2_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
+
   Measurement();
   /* USER CODE END 2 */
 
@@ -148,17 +149,6 @@ void Measurement(void)
 	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
 	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
-	  printf("Data:");
 	  HAL_TIM_Base_Start(&htim3);
 
 	  hdma_adc2.Instance = DMA2_Channel1;
@@ -179,9 +169,30 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	HAL_ADC_Stop_DMA(&hadc2);
 	HAL_DMA_Abort(&hdma_tim6_up);
 	for(int i = 0;i < 800;i++)
+	{
+		DECADA0[i] = DECADA0[i] + ADC_BIA[i];
+		//printf("%i\n",ADC_BIA[i]);
+	}
+	for(int i = 0;i < 800;i++)
+	{
+		ADC_BIA[i] = 0;
+	}
+	if(Measures < 15)
+	{
+		Measures ++;
+		Measurement();
+	}
+	else
+	{
+		for(int i = 0;i < 800;i++)
 		{
-			printf("%i\n,",ADC_BIA[i]);
+			DECADA0[i] = DECADA0[i]/15;
 		}
+		for(int i = 0;i < 800;i++)
+		{
+			printf("%i\n",DECADA0[i]);
+		}
+	}
 }
 /**
   * @brief System Clock Configuration
@@ -304,7 +315,7 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 1799;
+  htim3.Init.Prescaler = 179;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -348,7 +359,7 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 17999;
+  htim6.Init.Prescaler = 1799;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim6.Init.Period = 1;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -435,17 +446,26 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PA0 */
+  GPIO_InitStruct.Pin = GPIO_PIN_14;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
