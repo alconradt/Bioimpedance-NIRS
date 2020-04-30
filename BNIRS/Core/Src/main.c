@@ -78,8 +78,9 @@ static void MX_TIM3_Init(void);
 uint32_t DIBS_sequence[] =
 {1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536,1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536}; // 1 -> High & 65536 -> Low
 
-int Measures = 0;
-uint16_t ADC_BIA[800], DECADA0[800];
+int Measures = 0, Decade = 0;
+uint16_t ADC_BIA0[800], ADC_BIA1[800], ADC_BIA2[800], ADC_BIA3[800];
+uint32_t DECADA0[800], DECADA1[800], DECADA2[800], DECADA3[800];
 /* USER CODE END 0 */
 
 /**
@@ -117,7 +118,7 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-  Measurement();
+  Measurement0();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -131,7 +132,7 @@ int main(void)
   /* USER CODE END 3 */
 }
 
-void Measurement(void)
+void Measurement0(void)
 {
 	  HAL_TIM_Base_Init(&htim6);
 	  HAL_TIM_Base_Start(&htim6);
@@ -161,36 +162,238 @@ void Measurement(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA, 800);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA0, 800);
+}
+
+void Measurement1(void)
+{
+	  HAL_TIM_Base_Init(&htim6);
+	  HAL_TIM_Base_Start(&htim6);
+
+	  hdma_tim6_up.Instance = DMA1_Channel3;
+	  hdma_tim6_up.Init.Direction = DMA_MEMORY_TO_PERIPH;
+	  hdma_tim6_up.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_tim6_up.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_tim6_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+	  hdma_tim6_up.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+	  hdma_tim6_up.Init.Mode = DMA_CIRCULAR;
+	  hdma_tim6_up.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_tim6_up);
+
+	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
+	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
+
+	  HAL_TIM_Base_Start(&htim3);
+
+	  hdma_adc2.Instance = DMA2_Channel1;
+	  hdma_adc2.Init.Direction = DMA_PERIPH_TO_MEMORY;
+	  hdma_adc2.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_adc2.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_adc2.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.Mode = DMA_NORMAL;
+	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_adc2);
+
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA1, 800);
+}
+
+void Measurement2(void)
+{
+	  HAL_TIM_Base_Init(&htim6);
+	  HAL_TIM_Base_Start(&htim6);
+
+	  hdma_tim6_up.Instance = DMA1_Channel3;
+	  hdma_tim6_up.Init.Direction = DMA_MEMORY_TO_PERIPH;
+	  hdma_tim6_up.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_tim6_up.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_tim6_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+	  hdma_tim6_up.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+	  hdma_tim6_up.Init.Mode = DMA_CIRCULAR;
+	  hdma_tim6_up.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_tim6_up);
+
+	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
+	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
+
+	  HAL_TIM_Base_Start(&htim3);
+
+	  hdma_adc2.Instance = DMA2_Channel1;
+	  hdma_adc2.Init.Direction = DMA_PERIPH_TO_MEMORY;
+	  hdma_adc2.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_adc2.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_adc2.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.Mode = DMA_NORMAL;
+	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_adc2);
+
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA2, 800);
+}
+
+void Measurement3(void)
+{
+	  HAL_TIM_Base_Init(&htim6);
+	  HAL_TIM_Base_Start(&htim6);
+
+	  hdma_tim6_up.Instance = DMA1_Channel3;
+	  hdma_tim6_up.Init.Direction = DMA_MEMORY_TO_PERIPH;
+	  hdma_tim6_up.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_tim6_up.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_tim6_up.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+	  hdma_tim6_up.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
+	  hdma_tim6_up.Init.Mode = DMA_CIRCULAR;
+	  hdma_tim6_up.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_tim6_up);
+
+	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
+	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
+
+	  HAL_TIM_Base_Start(&htim3);
+
+	  hdma_adc2.Instance = DMA2_Channel1;
+	  hdma_adc2.Init.Direction = DMA_PERIPH_TO_MEMORY;
+	  hdma_adc2.Init.PeriphInc = DMA_PINC_DISABLE;
+	  hdma_adc2.Init.MemInc = DMA_MINC_ENABLE;
+	  hdma_adc2.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
+	  hdma_adc2.Init.Mode = DMA_NORMAL;
+	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
+	  HAL_DMA_Init(&hdma_adc2);
+
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA3, 800);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 {
 	HAL_ADC_Stop_DMA(&hadc2);
 	HAL_DMA_Abort(&hdma_tim6_up);
-	for(int i = 0;i < 800;i++)
+
+	if(Decade == 0)
 	{
-		DECADA0[i] = DECADA0[i] + ADC_BIA[i];
-		//printf("%i\n",ADC_BIA[i]);
-	}
-	for(int i = 0;i < 800;i++)
-	{
-		ADC_BIA[i] = 0;
-	}
-	if(Measures < 15)
-	{
-		Measures ++;
-		Measurement();
-	}
-	else
-	{
+		htim3.Init.Prescaler = 999;
+		htim6.Init.Prescaler = 35999;
+
 		for(int i = 0;i < 800;i++)
 		{
-			DECADA0[i] = DECADA0[i]/15;
+			DECADA0[i] = DECADA0[i] + ADC_BIA0[i];
+			//printf("%i\n",ADC_BIA[i]);
 		}
 		for(int i = 0;i < 800;i++)
 		{
-			printf("%i\n",DECADA0[i]);
+			ADC_BIA0[i] = 0;
+		}
+		if(Measures < 100)
+		{
+			Measures ++;
+			Measurement0();
+		}
+		else
+		{
+			for(int i = 0;i < 800;i++)
+			{
+				DECADA0[i] = DECADA0[i]/100;
+			}
+			for(int i = 0;i < 800;i++)
+			{
+				printf("%i\n",DECADA0[i]);
+			}
+			Decade ++;
+		}
+	}
+	if(Decade == 1)
+	{
+		htim3.Init.Prescaler = 99;
+		htim6.Init.Prescaler = 3599;
+
+		for(int i = 0;i < 800;i++)
+		{
+			DECADA1[i] = DECADA1[i] + ADC_BIA1[i];
+			//printf("%i\n",ADC_BIA[i]);
+		}
+		for(int i = 0;i < 800;i++)
+		{
+			ADC_BIA1[i] = 0;
+		}
+		if(Measures < 200)
+		{
+			Measures ++;
+			Measurement1();
+		}
+		else
+		{
+			for(int i = 0;i < 800;i++)
+			{
+				DECADA1[i] = DECADA1[i]/100;
+			}
+			for(int i = 0;i < 800;i++)
+			{
+				printf("%i\n",DECADA1[i]);
+			}
+			Decade ++;
+		}
+	}
+	if(Decade == 2)
+	{
+		htim3.Init.Prescaler = 9;
+		htim6.Init.Prescaler = 359;
+
+		for(int i = 0;i < 800;i++)
+		{
+			DECADA2[i] = DECADA2[i] + ADC_BIA2[i];
+			//printf("%i\n",ADC_BIA[i]);
+		}
+		for(int i = 0;i < 800;i++)
+		{
+			ADC_BIA2[i] = 0;
+		}
+		if(Measures < 300)
+		{
+			Measures ++;
+			Measurement2();
+		}
+		else
+		{
+			for(int i = 0;i < 800;i++)
+			{
+				DECADA2[i] = DECADA2[i]/100;
+			}
+			for(int i = 0;i < 800;i++)
+			{
+				printf("%i\n",DECADA2[i]);
+			}
+			Decade ++;
+		}
+	}
+	if(Decade == 3)
+	{
+		htim3.Init.Prescaler = 0;
+		htim6.Init.Prescaler = 35;
+
+		for(int i = 0;i < 800;i++)
+		{
+			DECADA3[i] = DECADA3[i] + ADC_BIA3[i];
+			//printf("%i\n",ADC_BIA[i]);
+		}
+		for(int i = 0;i < 800;i++)
+		{
+			ADC_BIA3[i] = 0;
+		}
+		if(Measures < 400)
+		{
+			Measures ++;
+			Measurement3();
+		}
+		else
+		{
+			for(int i = 0;i < 800;i++)
+			{
+				DECADA3[i] = DECADA3[i]/100;
+			}
+			for(int i = 0;i < 800;i++)
+			{
+				printf("%i\n",DECADA3[i]);
+			}
 		}
 	}
 }
