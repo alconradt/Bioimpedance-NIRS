@@ -52,12 +52,14 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+
+/* USER CODE BEGIN EFP */
 void Measurement0(void);
 void Measurement1(void);
 void Measurement2(void);
 void Measurement3(void);
-/* USER CODE BEGIN EFP */
-
+void NIRS(void);
+//void NIRS(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

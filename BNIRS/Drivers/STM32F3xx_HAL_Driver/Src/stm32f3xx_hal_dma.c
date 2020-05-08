@@ -568,7 +568,7 @@ HAL_StatusTypeDef HAL_DMA_PollForTransfer(DMA_HandleTypeDef *hdma, uint32_t Comp
   */
 void HAL_DMA_IRQHandler(DMA_HandleTypeDef *hdma)
 {
-  uint32_t flag_it = hdma->DmaBaseAddress->ISR;
+	uint32_t flag_it = hdma->DmaBaseAddress->ISR;
   uint32_t source_it = hdma->Instance->CCR;
           
   /* Half Transfer Complete Interrupt management ******************************/
@@ -606,6 +606,7 @@ void HAL_DMA_IRQHandler(DMA_HandleTypeDef *hdma)
   		/* Change the DMA state */
   		//hdma->State = HAL_DMA_STATE_READY;
   	}
+  	
   	/* Clear the transfer complete flag */
   	hdma->DmaBaseAddress->IFCR = DMA_FLAG_TC1 << hdma->ChannelIndex;
   	
