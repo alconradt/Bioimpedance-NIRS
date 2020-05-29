@@ -83,8 +83,8 @@ uint32_t DIBS_sequence[] =
 {1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536,1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536}; // 1 -> High & 65536 -> Low
 
 int Measures = 0, Decade = 0, Led1 = 0, Led2 = 0, Led3 = 0;
-uint16_t ADC_BIA0[800], ADC_BIA1[800], ADC_BIA2[800], ADC_BIA3[800];
-uint32_t DECADA0[800], DECADA1[800], DECADA2[800], DECADA3[800];
+uint16_t ADC_BIA0[1200], ADC_BIA1[1200], ADC_BIA2[1200], ADC_BIA3[1200];
+uint32_t DECADA0[1200], DECADA1[1200], DECADA2[1200], DECADA3[1200];
 /* USER CODE END 0 */
 
 /**
@@ -322,8 +322,6 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 999;
   /* USER CODE END TIM3_Init 1 */
-  htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 1799;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim3.Init.Period = 2;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -367,8 +365,6 @@ static void MX_TIM6_Init(void)
   htim6.Instance = TIM6;
   htim6.Init.Prescaler = 35999;
   /* USER CODE END TIM6_Init 1 */
-  htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 17999;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim6.Init.Period = 2;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -554,7 +550,7 @@ void Measurement0(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA0, 800);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA0, 1200);
 }
 
 void Measurement1(void)
@@ -587,7 +583,7 @@ void Measurement1(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA1, 800);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA1, 1200);
 }
 
 void Measurement2(void)
@@ -620,7 +616,7 @@ void Measurement2(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA2, 800);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA2, 1200);
 }
 
 void Measurement3(void)
@@ -653,7 +649,7 @@ void Measurement3(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA3, 800);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA3, 1200);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
@@ -666,11 +662,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 999;
 		htim6.Init.Prescaler = 35999;
 
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			DECADA0[i] = DECADA0[i] + ADC_BIA0[i];
 		}
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			ADC_BIA0[i] = 0;
 		}
@@ -681,11 +677,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				DECADA0[i] = DECADA0[i]/100;
 			}
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				printf("%li\n",DECADA0[i]);
 			}
@@ -697,11 +693,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 99;
 		htim6.Init.Prescaler = 3599;
 
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			DECADA1[i] = DECADA1[i] + ADC_BIA1[i];
 		}
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			ADC_BIA1[i] = 0;
 		}
@@ -712,11 +708,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				DECADA1[i] = DECADA1[i]/100;
 			}
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				printf("%li\n",DECADA1[i]);
 			}
@@ -728,11 +724,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 9;
 		htim6.Init.Prescaler = 359;
 
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			DECADA2[i] = DECADA2[i] + ADC_BIA2[i];
 		}
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			ADC_BIA2[i] = 0;
 		}
@@ -743,11 +739,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				DECADA2[i] = DECADA2[i]/100;
 			}
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				printf("%li\n",DECADA2[i]);
 			}
@@ -759,11 +755,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 0;
 		htim6.Init.Prescaler = 35;
 
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			DECADA3[i] = DECADA3[i] + ADC_BIA3[i];
 		}
-		for(int i = 0;i < 800;i++)
+		for(int i = 0;i < 1200;i++)
 		{
 			ADC_BIA3[i] = 0;
 		}
@@ -774,11 +770,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				DECADA3[i] = DECADA3[i]/100;
 			}
-			for(int i = 0;i < 800;i++)
+			for(int i = 0;i < 1200;i++)
 			{
 				printf("%li\n",DECADA3[i]);
 			}
