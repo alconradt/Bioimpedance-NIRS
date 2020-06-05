@@ -323,7 +323,7 @@ static void MX_TIM3_Init(void)
   htim3.Init.Prescaler = 999;
   /* USER CODE END TIM3_Init 1 */
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 2;
+  htim3.Init.Period = 1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -363,10 +363,10 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE BEGIN TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 35999;
+  htim6.Init.Prescaler = 17999;
   /* USER CODE END TIM6_Init 1 */
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim6.Init.Period = 2;
+  htim6.Init.Period = 1;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
   {
@@ -660,7 +660,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	if(Decade == 0)
 	{
 		htim3.Init.Prescaler = 999;
-		htim6.Init.Prescaler = 35999;
+		htim6.Init.Prescaler = 17999;
 
 		for(int i = 0;i < 1200;i++)
 		{
@@ -691,7 +691,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	if(Decade == 1)
 	{
 		htim3.Init.Prescaler = 99;
-		htim6.Init.Prescaler = 3599;
+		htim6.Init.Prescaler = 1799;
 
 		for(int i = 0;i < 1200;i++)
 		{
@@ -722,7 +722,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	if(Decade == 2)
 	{
 		htim3.Init.Prescaler = 9;
-		htim6.Init.Prescaler = 359;
+		htim6.Init.Prescaler = 179;
 
 		for(int i = 0;i < 1200;i++)
 		{
@@ -753,7 +753,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	if(Decade == 3)
 	{
 		htim3.Init.Prescaler = 0;
-		htim6.Init.Prescaler = 35;
+		htim6.Init.Prescaler = 17;
 
 		for(int i = 0;i < 1200;i++)
 		{
