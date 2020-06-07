@@ -663,7 +663,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 
 	if(Decade == 0)
 	{
-		htim3.Init.Prescaler = 999;
+		htim3.Init.Prescaler = 8999;
 		htim6.Init.Prescaler = 17999;
 
 		for(int i = 0;i < 2001;i++)
@@ -694,7 +694,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	}
 	if(Decade == 1)
 	{
-		htim3.Init.Prescaler = 99;
+		htim3.Init.Prescaler = 899;
 		htim6.Init.Prescaler = 1799;
 
 		for(int i = 0;i < 2001;i++)
@@ -725,7 +725,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	}
 	if(Decade == 2)
 	{
-		htim3.Init.Prescaler = 9;
+		htim3.Init.Prescaler = 89;
 		htim6.Init.Prescaler = 179;
 
 		for(int i = 0;i < 2001;i++)
@@ -756,7 +756,7 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 	}
 	if(Decade == 3)
 	{
-		htim3.Init.Prescaler = 0;
+		htim3.Init.Prescaler = 8;
 		htim6.Init.Prescaler = 17;
 
 		for(int i = 0;i < 2001;i++)
