@@ -83,8 +83,8 @@ uint32_t DIBS_sequence[] =
 {1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536,1,1,1,65536,65536,65536,65536,65536,1,1,65536,1,1,65536,1,65536}; // 1 -> High & 65536 -> Low
 
 int Measures = 0, Decade = 0, Led1 = 0, Led2 = 0, Led3 = 0;
-uint16_t ADC_BIA0[1200], ADC_BIA1[1200], ADC_BIA2[1200], ADC_BIA3[1200];
-uint32_t DECADA0[1200], DECADA1[1200], DECADA2[1200], DECADA3[1200];
+uint16_t ADC_BIA0[2001], ADC_BIA1[2001], ADC_BIA2[2001], ADC_BIA3[2001];
+uint32_t DECADA0[2001], DECADA1[2001], DECADA2[2001], DECADA3[2001];
 /* USER CODE END 0 */
 
 /**
@@ -538,6 +538,7 @@ void Measurement0(void)
 	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
 	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
+	  HAL_TIM_Base_Init(&htim3);
 	  HAL_TIM_Base_Start(&htim3);
 
 	  hdma_adc2.Instance = DMA2_Channel1;
@@ -550,7 +551,7 @@ void Measurement0(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA0, 1200);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA0, 2001);
 }
 
 void Measurement1(void)
@@ -571,6 +572,7 @@ void Measurement1(void)
 	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
 	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
+	  HAL_TIM_Base_Init(&htim3);
 	  HAL_TIM_Base_Start(&htim3);
 
 	  hdma_adc2.Instance = DMA2_Channel1;
@@ -583,7 +585,7 @@ void Measurement1(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA1, 1200);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA1, 2001);
 }
 
 void Measurement2(void)
@@ -604,6 +606,7 @@ void Measurement2(void)
 	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
 	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
+	  HAL_TIM_Base_Init(&htim3);
 	  HAL_TIM_Base_Start(&htim3);
 
 	  hdma_adc2.Instance = DMA2_Channel1;
@@ -616,7 +619,7 @@ void Measurement2(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA2, 1200);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA2, 2001);
 }
 
 void Measurement3(void)
@@ -637,6 +640,7 @@ void Measurement3(void)
 	  HAL_DMA_Start(&hdma_tim6_up, (uint32_t)DIBS_sequence, (uint32_t)&GPIOA->BSRR, 32); //initialization of data transfer in the DIBS_sequence buffer to the GPIOA periphery
 	  __HAL_TIM_ENABLE_DMA(&htim6, TIM_DMA_UPDATE);
 
+	  HAL_TIM_Base_Init(&htim3);
 	  HAL_TIM_Base_Start(&htim3);
 
 	  hdma_adc2.Instance = DMA2_Channel1;
@@ -649,7 +653,7 @@ void Measurement3(void)
 	  hdma_adc2.Init.Priority = DMA_PRIORITY_LOW;
 	  HAL_DMA_Init(&hdma_adc2);
 
-	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA3, 1200);
+	  HAL_ADC_Start_DMA(&hadc2, (uint32_t*)ADC_BIA3, 2001);
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
@@ -662,11 +666,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 999;
 		htim6.Init.Prescaler = 17999;
 
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			DECADA0[i] = DECADA0[i] + ADC_BIA0[i];
 		}
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			ADC_BIA0[i] = 0;
 		}
@@ -677,11 +681,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				DECADA0[i] = DECADA0[i]/100;
 			}
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				printf("%li\n",DECADA0[i]);
 			}
@@ -693,11 +697,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 99;
 		htim6.Init.Prescaler = 1799;
 
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			DECADA1[i] = DECADA1[i] + ADC_BIA1[i];
 		}
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			ADC_BIA1[i] = 0;
 		}
@@ -708,11 +712,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				DECADA1[i] = DECADA1[i]/100;
 			}
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				printf("%li\n",DECADA1[i]);
 			}
@@ -724,11 +728,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 9;
 		htim6.Init.Prescaler = 179;
 
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			DECADA2[i] = DECADA2[i] + ADC_BIA2[i];
 		}
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			ADC_BIA2[i] = 0;
 		}
@@ -739,11 +743,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				DECADA2[i] = DECADA2[i]/100;
 			}
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				printf("%li\n",DECADA2[i]);
 			}
@@ -755,11 +759,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		htim3.Init.Prescaler = 0;
 		htim6.Init.Prescaler = 17;
 
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			DECADA3[i] = DECADA3[i] + ADC_BIA3[i];
 		}
-		for(int i = 0;i < 1200;i++)
+		for(int i = 0;i < 2001;i++)
 		{
 			ADC_BIA3[i] = 0;
 		}
@@ -770,11 +774,11 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef* hadc)
 		}
 		else
 		{
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				DECADA3[i] = DECADA3[i]/100;
 			}
-			for(int i = 0;i < 1200;i++)
+			for(int i = 0;i < 2001;i++)
 			{
 				printf("%li\n",DECADA3[i]);
 			}
